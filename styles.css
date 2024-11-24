@@ -83,8 +83,8 @@ textarea {
     border-radius: 5px;
     text-align: left;
     min-height: 50px;
-    max-height: 400px;      /* Set a maximum height */
-    overflow-y: auto;       /* Enable vertical scrolling if content exceeds max-height */
-    overflow-wrap: break-word; /* Ensure long words break and don't overflow */
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-wrap: break-word;
     word-break: break-word;
 }
