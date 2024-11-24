@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>GreaterGPT</h1>
+    <p>Select a pre-written helper for your input</p>
+</header>
+
+<!-- Main App Layout -->
+<main class="appContainer">
+    <!-- Left Query Buttons -->
+    <section id="leftQueries" class="querySection">
+        <h2>AI Practices</h2>
+        <button id="assistantRole" class="queryButton blueButton">Be My Assistant</button>
+        <button id="creativeRole" class="queryButton blueButton">Generate Creative Ideas</button>
+        <button id="educatorRole" class="queryButton blueButton">Teach a Concept</button>
+        <button id="translatorRole" class="queryButton blueButton">Translate Language</button>
+        <button id="researcherRole" class="queryButton blueButton">Find Information</button>
+        <button id="debuggerRole" class="queryButton blueButton">Help Debug Code</button>
+        <button id="storytellerRole" class="queryButton blueButton">Tell a Story</button>
+        <button id="explainerRole" class="queryButton blueButton">Explain Complex Topics</button>
+        <button id="motivatorRole" class="queryButton blueButton">Motivate Me</button>
+        <button id="plannerRole" class="queryButton blueButton">Plan a Schedule</button>
+        <button id="advisorRole" class="queryButton blueButton">Give Advice</button>
+        <button id="criticRole" class="queryButton blueButton">Critique My Work</button>
+        <button id="entertainerRole" class="queryButton blueButton">Be Entertaining</button>
+        <button id="interviewerRole" class="queryButton blueButton">Conduct an Interview</button>
+        <button id="collaboratorRole" class="queryButton blueButton">Collaborate on Ideas</button>
+        <button id="roleModelRole" class="queryButton blueButton">Act as a Role Model</button>
+        <button id="analystRole" class="queryButton blueButton">Perform Data Analysis</button>
+        <button id="philosopherRole" class="queryButton blueButton">Act Like a Philosopher</button>
+        <button id="coachRole" class="queryButton blueButton">Act as a Coach</button>
+        <button id="historianRole" class="queryButton blueButton">Act Like a Historian</button>
+    </section>
+
+    <!-- Query Input and Send -->
+    <section id="queryInputArea" class="querySection">
+        <h2>Query Input</h2>
+        <div class="inputGroup">
+            <label for="apiKey">API Key:</label>
+            <input id="apiKey" type="text" placeholder="Enter your API key (optional)">
+        </div>
+        <textarea id="queryText" placeholder="Type your query here..."></textarea>
+        <button id="sendQuery" class="queryButton greenButton">Send Query</button>
+        <button id="resetQuery" class="queryButton redButton">Reset</button>
+    </section>
+
+    <!-- Right Query Buttons -->
+    <section id="rightQueries" class="querySection">
+        <h2>Filters</h2>
+        <button id="summarizeFilter" class="queryButton redButton">Summarize Text</button>
+        <button id="compareFilter" class="queryButton redButton">Compare Options</button>
+        <button id="categorizeFilter" class="queryButton redButton">Categorize Information</button>
+        <button id="prioritizeFilter" class="queryButton redButton">Prioritize Tasks</button>
+        <button id="visualizeFilter" class="queryButton redButton">Create Visuals</button>
+        <button id="debateFilter" class="queryButton redButton">Analyze Arguments</button>
+        <button id="patternFilter" class="queryButton redButton">Find Patterns</button>
+        <button id="evaluateFilter" class="queryButton redButton">Evaluate Performance</button>
+        <button id="predictFilter" class="queryButton redButton">Make Predictions</button>
+        <button id="generateFilter" class="queryButton redButton">Generate Alternatives</button>
+        <button id="explainFilter" class="queryButton redButton">Explain Results</button>
+        <button id="contrastFilter" class="queryButton redButton">Highlight Differences</button>
+        <button id="trendFilter" class="queryButton redButton">Analyze Trends</button>
+        <button id="optimizeFilter" class="queryButton redButton">Optimize Solutions</button>
+        <button id="sentimentFilter" class="queryButton redButton">Analyze Sentiments</button>
+        <button id="hypothesizeFilter" class="queryButton redButton">Create Hypotheses</button>
+        <button id="classifyFilter" class="queryButton redButton">Classify Input</button>
+        <button id="correlateFilter" class="queryButton redButton">Find Correlations</button>
+        <button id="decomposeFilter" class="queryButton redButton">Decompose Problems</button>
+        <button id="benchmarkFilter" class="queryButton redButton">Benchmark Performance</button>
+    </section>
+</main>
+
+<!-- Response Area -->
+<section id="responseArea" class="responseSection">
+    <h2>API Response</h2>
+    <div id="responseOutput">Your response will appear here.</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

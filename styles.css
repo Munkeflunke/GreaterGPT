@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    color: #555;
+}
+
+/* Layout */
+.appContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.querySection {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 300px;
+}
+
+/* Buttons */
+.queryButton {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.queryButton:hover {
+    opacity: 0.9;
+}
+
+.blueButton {
+    background-color: #007BFF;
+    color: white;
+}
+
+.greenButton {
+    background-color: #28A745;
+    color: white;
+}
+
+.redButton {
+    background-color: #DC3545;
+    color: white;
+}
+
+/* Input and Output */
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+#responseOutput {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    min-height: 50px;
+    max-height: 400px;      /* Set a maximum height */
+    overflow-y: auto;       /* Enable vertical scrolling if content exceeds max-height */
+    overflow-wrap: break-word; /* Ensure long words break and don't overflow */
+    word-break: break-word;
+}
